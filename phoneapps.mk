@@ -7,7 +7,7 @@ private-phone-apps := \
 	CertInstaller \
 	FM2 \
 	KeyChain \
-	LatinIME
+	LatinIME \
 	LiveWallpapers \
 	PacProcessor \
 	PicoTts \
