@@ -1,0 +1,3 @@
+post-build=samsung/serranodsxx/serranods:6.0.1/M4B30X/50852bf399:user/release-keys
+post-timestamp=1475895716
+pre-device=serranods
