@@ -55,9 +55,9 @@ include $(PORT_BUILD)/porting.mk
 local-pre-zip-misc:
 	@echo copying files!
 	cp -rf other/system $(ZIP_DIR)/
-	#@echo goodbye! miui prebuilt binaries!
-	#rm -rf $(ZIP_DIR)/system/bin/app_process32_vendor
-	#cp -rf stockrom/system/bin/app_process32 $(ZIP_DIR)/system/bin/app_process32
+	@echo goodbye! miui prebuilt binaries!
+	rm -rf $(ZIP_DIR)/system/bin/app_process32_vendor
+	cp -rf stockrom/system/bin/app_process32 $(ZIP_DIR)/system/bin/app_process32
 	@echo remove unnecessary libs!
 	rm -rf $(ZIP_DIR)/system/lib64
 	rm -rf $(ZIP_DIR)/system/lib/libDecRes_sdk.so
