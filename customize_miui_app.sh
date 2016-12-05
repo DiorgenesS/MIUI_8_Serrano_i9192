@@ -37,3 +37,7 @@ function mergyXmlPart() {
 		$XMLMERGYTOOL $src $dst
 	done
 }
+
+if [ $1 = "MiuiSystemUI" ];then
+    $XMLMERGYTOOL $1/res/values $2/res/values
+fi
