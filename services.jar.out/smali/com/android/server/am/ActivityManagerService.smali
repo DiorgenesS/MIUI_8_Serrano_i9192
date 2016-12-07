@@ -97218,6 +97218,7 @@
 
     const/16 v26, 0x1
 
+    .line 17904
     .local v26, "is24Hour":I
     :goto_3
     move-object/from16 v0, p0
@@ -97240,35 +97241,42 @@
 
     invoke-virtual {v3, v4}, Lcom/android/server/am/ActivityManagerService$MainHandler;->sendMessage(Landroid/os/Message;)Z
 
+    .line 17906
     new-instance v6, Landroid/content/Intent;
 
     .end local v6    # "intent":Landroid/content/Intent;
-    const-string, "android.intent.action.LOCALE_CHANGED"
+    const-string/jumbo v3, "android.intent.action.LOCALE_CHANGED"
 
     invoke-direct {v6, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
+    .line 17907
     .restart local v6    # "intent":Landroid/content/Intent;
     const/high16 v3, 0x10000000
 
     invoke-virtual {v6, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
+    .line 17908
     move-object/from16 v0, p0
 
     iget-boolean v3, v0, Lcom/android/server/am/ActivityManagerService;->mProcessesReady:Z
 
     if-nez v3, :cond_9
 
+    .line 17909
     const/high16 v3, 0x40000000    # 2.0f
 
     invoke-virtual {v6, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
+    .line 17913
     :cond_9
     sget v17, Lcom/android/server/am/ActivityManagerService;->MY_PID:I
 
+    .line 17911
     const/4 v4, 0x0
 
     const/4 v5, 0x0
 
+    .line 17912
     const/4 v7, 0x0
 
     const/4 v8, 0x0
