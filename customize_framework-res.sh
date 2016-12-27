@@ -40,5 +40,6 @@ function mergyXmlPart() {
 
 if [ $1 = "framework-res/res" ]
 then
+	cp $1/default_wallpaper.jpg $2/drawable-hdpi-v4/
   $XMLMERGYTOOL $1/values $2/values
 fi
