@@ -4,11 +4,11 @@ Date: Tue, 1 Nov 2016 22:17:22 +0800
 Subject: [PATCH] Patch for DefaultActivity.smali
 
 ---
- smali/com/android/provision/activities/DefaultActivity.smali | 4 ++++
+ Provision/smali/com/android/provision/activities/DefaultActivity.smali | 4 ++++
  1 file changed, 4 insertions(+)
 
---- a/smali/com/android/provision/activities/DefaultActivity.smali
-+++ b/smali/com/android/provision/activities/DefaultActivity.smali
+--- a/Provision/smali/com/android/provision/activities/DefaultActivity.smali
++++ b/Provision/smali/com/android/provision/activities/DefaultActivity.smali
 @@ -218,6 +218,10 @@
  
      invoke-static {v2, v3, v5}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z

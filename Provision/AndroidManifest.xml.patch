@@ -4,11 +4,11 @@ Date: Tue, 1 Nov 2016 22:38:19 +0800
 Subject: [PATCH] Patch for AndroidManifest.xml
 
 ---
- AndroidManifest.xml | 1 +
+ Provision/AndroidManifest.xml | 1 +
  1 file changed, 1 insertion(+)
 
---- a/AndroidManifest.xml
-+++ b/AndroidManifest.xml
+--- a/Provision/AndroidManifest.xml
++++ b/Provision/AndroidManifest.xml
 @@ -12,6 +12,7 @@
      <uses-permission android:name="miui.permission.USE_INTERNAL_GENERAL_API"/>
      <application android:label="@string/app_name" android:name="ProvisionApplication" android:supportsRtl="true" android:theme="@style/Theme">
