@@ -77,3 +77,7 @@ local-pre-zip-misc:
 	$(hide) rm -rf $(ZIP_DIR)/system/lib/xmpass_libweibosdkcore.so
 	@echo remove unnecessary files!
 	$(hide) rm -rf $(ZIP_DIR)/system/recovery-from-boot.p
+	$(hide) rm -rf $(ZIP_DIR)/system/media/audio/*
+	@echo use only miui sounds!
+	$(hide) cp -rf $(PORT_ROOT)/miui/system/media/$(local-density)/audio/* $(ZIP_DIR)/system/media/audio
+	$(hide) rm -rf $(ZIP_DIR)/system/media/audio/create_symlink_for_audio-timestamp
